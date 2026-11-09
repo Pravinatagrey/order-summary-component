@@ -152,7 +152,7 @@ footer {
   margin-bottom: 1.5em;
 }
 
-.cancel-order .proceed-btn {
+.cancel-order  {
   all: unset;
   display: block;
   border-radius: 10px;
@@ -191,7 +191,9 @@ footer {
 
 .proceed-btn:hover {
   opacity: .8;
+   background-color: #766cf1 !important;
 }
+
 
 .cancel-order {
   color: var(--clr-neutral-blue-300);
