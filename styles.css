@@ -95,7 +95,7 @@ footer {
   display: flex;
 }
 
-.plan-details {
+.plan-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -105,12 +105,12 @@ footer {
   font-size: .7rem;
 }
 
-.plan-details h3 {
+.plan-text h3 {
   color: var(--clr-neutral-blue-800);
   font-size: .9rem;
 }
 
-.plan-details p {
+.plan-text p {
   color: var(--clr-neutral-blue-300);
   font-size: .8rem;
 }
@@ -152,7 +152,7 @@ footer {
   margin-bottom: 1.5em;
 }
 
-.btn {
+.cancel-order .proceed-btn {
   all: unset;
   display: block;
   border-radius: 10px;
@@ -164,24 +164,24 @@ footer {
   padding: 1em;
 }
 
-.btn:focus {
+.proceed-btn:focus {
   /* Provide a fallback style for browsers
      that don't support :focus-visible */
   outline: 3px dashed var(--clr-neutral-blue-300);
 }
 
-.btn:focus:not(:focus-visible) {
+.proceed-btn:focus:not(:focus-visible) {
   /* Remove the focus indicator on mouse-focus for browsers
      that do support :focus-visible */
   outline: none;
 }
 
-.btn:focus-visible {
+.proceed-btn:focus-visible {
   /* for browsers that do support :focus-visible */
   outline: 3px dashed var(--clr-neutral-blue-300);
 }
 
-.payment-btn {
+.proceed-btn {
   background: var(--clr-primary-bright-blue);
   color: white;
   box-shadow: 0 15px 20px 0 hsla(245, 75%, 52%, .25);
@@ -189,17 +189,29 @@ footer {
   transition: all .2s ease;
 }
 
-.payment-btn:hover {
+.proceed-btn:hover {
   opacity: .8;
 }
 
-.cancel-btn {
+.cancel-order {
   color: var(--clr-neutral-blue-300);
   transition: color .2s ease;
 }
 
-.cancel-btn:hover {
+.cancel-order:hover {
   color: var(--clr-neutral-blue-800);
+}
+
+/* Change Link */
+.change-link a {
+    color: hsl(245, 75%, 52%);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.change-link a:hover {
+    color: hsl(245, 83%, 68%);
+    text-decoration: none;
 }
 
 /* MEDIA QUERIES */
@@ -229,11 +241,11 @@ footer {
     padding: 1.5em;
   }
 
-  .plan-details h3 {
+  .plan-text h3 {
     font-size: 1.05rem;
   }
 
-  .plan-details p {
+  .plan-text p {
     font-size: 1.05rem;
   }
 
@@ -241,7 +253,7 @@ footer {
     font-size: .9rem;
   }
 
-  .btn {
+  .proceed-btn {
     margin-left: 3em;
     margin-right: 3em;
   }
