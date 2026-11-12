@@ -187,6 +187,9 @@ footer {
   box-shadow: 0 15px 20px 0 hsla(245, 75%, 52%, .25);
   opacity: 1;
   transition: all .2s ease;
+  border-radius: 10px;
+  padding: 1em;
+  
 }
 
 .proceed-btn:hover {
